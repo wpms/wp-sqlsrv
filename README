@@ -1,0 +1,12 @@
+This patch makes wordpress workable with MS Sql Server 2005, 2008 and Azure Databases
+
+You may either download the entire wordpress + package or you may download the standalone 
+patch and overwrite the files in your wordpress directory. If you do the later to an 
+existing wordpress installation it is strongly recommended that you backup your database, 
+config, the files to be overwritten, and also make a WP export of your blog (which you 
+would want to import once you setup wordpress for your MS database).
+
+This patches uses the mssql PHP drivers for Sql Server 2005, 2008 and you may also use 
+the sqlsrv drivers to connect to a SQL Azure DB.
+
+http://www.microsoft.com/sqlserver/2005/en/us/PHP-Driver.aspx
