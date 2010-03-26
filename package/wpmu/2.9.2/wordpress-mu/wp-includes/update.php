@@ -44,7 +44,7 @@ function wp_version_check() {
 	else
 		$mysql_version = 'N/A';
 	$local_package = isset( $wp_local_package )? $wp_local_package : '';
-	$url = "http://api.wordpress.org/core/version-check/1.3-mu/?version=$wp_version&wpmu_version=$wpmu_version&php=$php_version&locale=$locale&mysql=$mysql_version&local_package=$local_package&blogs=" . get_blog_count() . "&users=" . get_user_count();
+	$url = "http://wordpress.visitmix.com/api/wpmu/?version=$wp_version&wpmu_version=$wpmu_version&php=$php_version&locale=$locale&mysql=$mysql_version&local_package=$local_package&blogs=" . get_blog_count() . "&users=" . get_user_count();
 
 	$options = array(
 		'timeout' => ( ( defined('DOING_CRON') && DOING_CRON ) ? 30 : 3),
